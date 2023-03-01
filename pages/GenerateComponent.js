@@ -18,6 +18,7 @@ const GenerateComponent = (props) => {
             onResult={(result, error) => {
               if (!!result) {
                 setData(result?.text);
+                console.log(result);
               }
 
               if (!!error) {
