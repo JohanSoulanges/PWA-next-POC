@@ -11,10 +11,8 @@ const GenerateComponent = (props) => {
 
   return (
     <>
-      <div className={styles.QrCodeReader}>
-        <div>
           <QrReader
-            
+            className={styles.QrCodeReader}
             onResult={(result, error) => {
               if (!!result) {
                 setData(result?.text);
@@ -35,9 +33,7 @@ const GenerateComponent = (props) => {
               facingMode: "environment",
             }}
           />
-          <p>{data}</p>
-        </div>
-      </div>
+          <p className={styles.QrCodeResult}>{data}</p>
     </>
   );
 };
