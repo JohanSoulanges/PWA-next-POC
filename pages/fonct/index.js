@@ -6,6 +6,8 @@ import Modal from 'react-modal';
 const GenerateComponent = (props) => {
   const [data, setData] = useState('No result');
   const [isOpen, setIsOpen] = useState(false);
+  const [getCode, setGetCode] = useState(false);
+  const className = getCode ? 'camera none' : 'camera ';
   const customStyles = {
     overlay: {
       backgroundColor: 'rgba(0, 0, 0, 0.6)',
@@ -27,7 +29,7 @@ const GenerateComponent = (props) => {
     <>
       <div className='container'>
         <QrReader
-          className='camera'
+          className={className}
           onResult={(result, error) => {
             if (!!result) {
               setData(result?.text);
@@ -38,6 +40,7 @@ const GenerateComponent = (props) => {
             // if (!!error) {
             //   console.info(error);
             // }
+            console.log(className);
           }}
           //this is facing mode : "environment " it will open backcamera of the smartphone and if not found will
           // open the front camera
@@ -53,6 +56,8 @@ const GenerateComponent = (props) => {
         <div className='pad'>
           <Modal
             isOpen={isOpen}
+            onAfterOpen={() => setGetCode(true)}
+            onAfterClose={() => setGetCode(false)}
             onRequestClose={() => setIsOpen(false)}
             style={customStyles}
             ariaHideApp={false}
