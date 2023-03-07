@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
   --max-width: 1100px;
   --border-radius: 12px;
@@ -81,6 +85,8 @@
 
 html,
 body {
+  margin: 0;
+  padding: 0;
   max-width: 100vw;
   overflow-x: hidden;
 }
@@ -104,4 +110,48 @@ a {
   html {
     color-scheme: dark;
   }
+}
+
+/* Link */
+
+.link {
+  border-bottom: 3px solid #ff8cbc;
+  font-size: 3em;
+  transition: all 0.25s linear;
+  position: relative;
+}
+
+.link:before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: #61a3ff;
+  position: absolute;
+  left: 0;
+  bottom: -3px; /* this is to match where the border is */
+  transform-origin: left;
+  transform: scale(0);
+  transition: 0.25s linear;
+  /*   will-change: transform; */
+}
+
+.link:hover:before {
+  transform: scale(1);
+}
+
+/* camera */
+
+.camera {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  
+}
+
+/* container */
+
+.container {
+  max-width: initial;
 }

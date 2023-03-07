@@ -1,34 +1,42 @@
 {
   "polyfillFiles": [
-    "static/chunks/polyfills.js"
+    "static/chunks/polyfills-c67a75d1b6f99dc8.js"
   ],
-  "devFiles": [
-    "static/chunks/react-refresh.js"
-  ],
-  "ampDevFiles": [
-    "static/chunks/webpack.js",
-    "static/chunks/amp.js"
-  ],
+  "devFiles": [],
+  "ampDevFiles": [],
   "lowPriorityFiles": [
-    "static/development/_buildManifest.js",
-    "static/development/_ssgManifest.js"
+    "static/a6pjhXgE6CN7DElOCuFcq/_buildManifest.js",
+    "static/a6pjhXgE6CN7DElOCuFcq/_ssgManifest.js"
   ],
   "rootMainFiles": [],
   "pages": {
     "/": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/index.js"
+      "static/chunks/webpack-ee7e63bc15b31913.js",
+      "static/chunks/framework-2c79e2a64abdb08b.js",
+      "static/chunks/main-5e8e6846957165cd.js",
+      "static/css/033bfdf45cbd4368.css",
+      "static/chunks/pages/index-9beb1f3bcc71af38.js"
     ],
     "/_app": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/_app.js"
+      "static/chunks/webpack-ee7e63bc15b31913.js",
+      "static/chunks/framework-2c79e2a64abdb08b.js",
+      "static/chunks/main-5e8e6846957165cd.js",
+      "static/css/b2e6495f24ecde80.css",
+      "static/chunks/pages/_app-97d725a4bc5ca324.js"
     ],
     "/_error": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/_error.js"
+      "static/chunks/webpack-ee7e63bc15b31913.js",
+      "static/chunks/framework-2c79e2a64abdb08b.js",
+      "static/chunks/main-5e8e6846957165cd.js",
+      "static/chunks/pages/_error-8353112a01355ec2.js"
+    ],
+    "/fonct": [
+      "static/chunks/webpack-ee7e63bc15b31913.js",
+      "static/chunks/framework-2c79e2a64abdb08b.js",
+      "static/chunks/main-5e8e6846957165cd.js",
+      "static/chunks/54c66987-62f2f03e3b090c1e.js",
+      "static/chunks/513-8f0cfd7128f27c2a.js",
+      "static/chunks/pages/fonct-60dc64e86011228b.js"
     ]
   },
   "ampFirstPages": []
