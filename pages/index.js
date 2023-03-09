@@ -15,9 +15,12 @@ export default function Home() {
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <main className={styles.main}>
-        <div>
+        <div className='d-flex'>
           <a href='/fonct' className='link'>
             Fonctionnalité camera
+          </a>
+          <a href='/add' className='link'>
+            Fonctionnalité add
           </a>
         </div>
       </main>
