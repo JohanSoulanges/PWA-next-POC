@@ -27,7 +27,7 @@ const GenerateComponent = (props) => {
     const stream = await navigator.mediaDevices.getUserMedia({
       video: {
         zoom: { ideal: zoom },
-        facingMode: 'environment',
+        facingMode: { exact: "environment" },
       },
     });
     setVideoStream(stream);
