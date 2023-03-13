@@ -5,8 +5,8 @@
   "devFiles": [],
   "ampDevFiles": [],
   "lowPriorityFiles": [
-    "static/XJg2DaoKMnOk1ih5Zz_cP/_buildManifest.js",
-    "static/XJg2DaoKMnOk1ih5Zz_cP/_ssgManifest.js"
+    "static/O3LpB4i50oYN5xNycsO41/_buildManifest.js",
+    "static/O3LpB4i50oYN5xNycsO41/_ssgManifest.js"
   ],
   "rootMainFiles": [],
   "pages": {
@@ -15,7 +15,7 @@
       "static/chunks/framework-2c79e2a64abdb08b.js",
       "static/chunks/main-5e8e6846957165cd.js",
       "static/css/033bfdf45cbd4368.css",
-      "static/chunks/pages/index-4fe9705b769a8e23.js"
+      "static/chunks/pages/index-19352a103986daca.js"
     ],
     "/_app": [
       "static/chunks/webpack-ee7e63bc15b31913.js",
@@ -42,7 +42,15 @@
       "static/chunks/main-5e8e6846957165cd.js",
       "static/chunks/54c66987-62f2f03e3b090c1e.js",
       "static/chunks/513-8f0cfd7128f27c2a.js",
-      "static/chunks/pages/fonct-c7e93c458a319da9.js"
+      "static/chunks/pages/fonct-35fe3a890e25c67c.js"
+    ],
+    "/zoom": [
+      "static/chunks/webpack-ee7e63bc15b31913.js",
+      "static/chunks/framework-2c79e2a64abdb08b.js",
+      "static/chunks/main-5e8e6846957165cd.js",
+      "static/chunks/54c66987-62f2f03e3b090c1e.js",
+      "static/chunks/513-8f0cfd7128f27c2a.js",
+      "static/chunks/pages/zoom-2e0bc5532ea1bebd.js"
     ]
   },
   "ampFirstPages": []

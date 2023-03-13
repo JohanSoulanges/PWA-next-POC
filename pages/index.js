@@ -22,6 +22,9 @@ export default function Home() {
           <a href='/add' className='link'>
             Fonctionnalité add
           </a>
+          <a href='/zoom' className='link'>
+            Fonctionnalité zoom
+          </a>
         </div>
       </main>
     </>

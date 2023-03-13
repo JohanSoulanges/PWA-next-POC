@@ -6,5 +6,6 @@
   "/api/hello": "pages/api/hello.js",
   "/fonct": "pages/fonct.html",
   "/": "pages/index.html",
+  "/zoom": "pages/zoom.html",
   "/404": "pages/404.html"
 }
