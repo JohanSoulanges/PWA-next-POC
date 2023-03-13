@@ -39,6 +39,7 @@ const GenerateComponent = (props) => {
             resizeMode: 'crop-and-scale',
             aspectRatio: { min: 1, max: 2 },
             facingMode: 'environment',
+            zoom: 5,
           }}
           onResult={(result, error) => {
             if (!!result) {
