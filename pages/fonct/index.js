@@ -25,7 +25,6 @@ const GenerateComponent = (props) => {
   adapter.browserDetails.browser;
   adapter.browserDetails.version;
 
-
   return (
     <>
       <div className='container'>
@@ -39,7 +38,7 @@ const GenerateComponent = (props) => {
             resizeMode: 'crop-and-scale',
             aspectRatio: { min: 1, max: 2 },
             facingMode: 'environment',
-            zoom: 5,
+            zoom: 2,
           }}
           onResult={(result, error) => {
             if (!!result) {
@@ -53,6 +52,9 @@ const GenerateComponent = (props) => {
             // }
           }}
         />
+        <button className='link' onClick="#">
+          zoom
+        </button>
         <a href='/' className='link'>
           return Home
         </a>
