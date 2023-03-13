@@ -25,11 +25,21 @@ const GenerateComponent = (props) => {
   adapter.browserDetails.browser;
   adapter.browserDetails.version;
 
+
   return (
     <>
       <div className='container'>
         <QrReader
           className={className}
+          constraints={{
+            minAspectRatio: 1.333,
+            minFrameRate: 30,
+            height: 720,
+            width: 1280,
+            resizeMode: 'crop-and-scale',
+            aspectRatio: { min: 1, max: 2 },
+            facingMode: 'environment',
+          }}
           onResult={(result, error) => {
             if (!!result) {
               setData(result?.text);
@@ -40,14 +50,6 @@ const GenerateComponent = (props) => {
             // if (!!error) {
             //   console.info(error);
             // }
-            console.log(className);
-          }}
-          //this is facing mode : "environment " it will open backcamera of the smartphone and if not found will
-          // open the front camera
-          constraints={{
-            minAspectRatio: 1.333,
-            minFrameRate: 30,
-            facingMode: 'environment',
           }}
         />
         <a href='/' className='link'>

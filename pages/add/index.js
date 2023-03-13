@@ -1,7 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import { QrReader } from 'react-qr-reader';
-import adapter from 'webrtc-adapter';
-import Modal from 'react-modal';
 
 const AddComponent = (props) => {
   useEffect(() => {
