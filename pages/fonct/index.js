@@ -22,6 +22,35 @@ const GenerateComponent = (props) => {
     },
   };
 
+  const [zoom, setZoom] = useState(1);
+  const [videoStream, setVideoStream] = useState(null);
+
+  const handleZoomIn = () => {
+    setZoom((prevZoom) => prevZoom + 0.1);
+  };
+
+  const handleZoomOut = () => {
+    setZoom((prevZoom) => prevZoom - 0.1);
+  };
+
+  const handleScan = (data) => {
+    console.log(data);
+  };
+
+  const handleError = (err) => {
+    console.error(err);
+  };
+
+  const openCamera = async () => {
+    const stream = await navigator.mediaDevices.getUserMedia({
+      video: {
+        facingMode: 'environment',
+        zoom: { ideal: zoom },
+      },
+    });
+    setVideoStream(stream);
+  };
+
   adapter.browserDetails.browser;
   adapter.browserDetails.version;
 
@@ -29,31 +58,26 @@ const GenerateComponent = (props) => {
     <>
       <div className='container'>
         <QrReader
-          className={className}
-          constraints={{
-            minAspectRatio: 1.333,
-            minFrameRate: 30,
-            height: 720,
-            width: 1280,
-            resizeMode: 'crop-and-scale',
-            aspectRatio: { min: 1, max: 2 },
-            facingMode: 'environment',
-          }}
-          onResult={(result, error) => {
-            if (!!result) {
-              setData(result?.text);
-              setIsOpen(true);
-              console.log(result);
-            }
-
-            // if (!!error) {
-            //   console.info(error);
-            // }
-          }}
+          delay={300}
+          onError={handleError}
+          onScan={handleScan}
+          style={{ width: '100%' }}
         />
-        <button className='link' onClick="#">
-          zoom
-        </button>
+        <div>
+          <button onClick={handleZoomIn} className='link'>
+            Zoom +
+          </button>
+          <button onClick={handleZoomOut} className='link'>
+            Zoom -
+          </button>
+          <button onClick={openCamera} className='link'>
+            Ouvrir la caméra
+          </button>
+        </div>
+        <video
+          ref={(video) => videoStream && (video.srcObject = videoStream)}
+          style={{ display: 'none' }}
+        />
         <a href='/' className='link'>
           return Home
         </a>

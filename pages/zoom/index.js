@@ -1,7 +1,5 @@
 import React, { useState } from 'react';
 import { QrReader } from 'react-qr-reader';
-import adapter from 'webrtc-adapter';
-import Modal from 'react-modal';
 
 const GenerateComponent = (props) => {
   const [zoom, setZoom] = useState(1);
