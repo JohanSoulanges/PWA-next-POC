@@ -26,8 +26,8 @@ const GenerateComponent = (props) => {
   const openCamera = async () => {
     const stream = await navigator.mediaDevices.getUserMedia({
       video: {
+        facingMode: 'environment',
         zoom: { ideal: zoom },
-        facingMode: { exact: "environment" },
       },
     });
     setVideoStream(stream);
