@@ -1,9 +1,6 @@
 import Head from 'next/head';
 import Image from 'next/image';
-import { Inter } from 'next/font/google';
 import styles from '@/styles/Home.module.css';
-
-const inter = Inter({ subsets: ['latin'] });
 
 export default function Home() {
   return (
@@ -16,14 +13,17 @@ export default function Home() {
       </Head>
       <main className={styles.main}>
         <div className='d-flex'>
-          <a href='/fonct' className='link'>
-            Fonctionnalité camera
+          <a href='/qrCode' className='link'>
+            Fonctionnalité Qr Code Scanner
           </a>
+          {/* <a href='/codeBar' className='link'>
+            Fonctionnalité CodeBar Scanner
+          </a> */}
           <a href='/add' className='link'>
             Fonctionnalité add
           </a>
-          <a href='/zoom' className='link'>
-            Fonctionnalité zoom
+          <a href='/generate' className='link'>
+            Fonctionnalité generate Qr Code
           </a>
         </div>
       </main>

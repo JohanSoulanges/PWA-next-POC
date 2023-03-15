@@ -4,8 +4,9 @@
   "/_document": "pages/_document.js",
   "/add": "pages/add.html",
   "/api/hello": "pages/api/hello.js",
-  "/fonct": "pages/fonct.html",
+  "/codeBar": "pages/codeBar.html",
   "/": "pages/index.html",
-  "/zoom": "pages/zoom.html",
+  "/generate": "pages/generate.html",
+  "/qrCode": "pages/qrCode.html",
   "/404": "pages/404.html"
 }
