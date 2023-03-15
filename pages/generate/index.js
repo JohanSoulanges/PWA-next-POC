@@ -29,7 +29,7 @@ const GenComponent = (props) => {
       >
         <QRCode
           size={256}
-          style={{ height: '50vh', maxWidth: '100%', width: '100%' }}
+          style={{paddingTop: '5%', paddingBottom: '5%', height: '50vh', maxWidth: '100%', width: '100%' }}
           value={ciphertext}
           viewBox={`0 0 256 256`}
         />

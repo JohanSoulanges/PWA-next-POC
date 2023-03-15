@@ -2,11 +2,10 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/add": "pages/add.html",
+  "/add": "pages/add.js",
   "/api/hello": "pages/api/hello.js",
-  "/codeBar": "pages/codeBar.html",
-  "/generate": "pages/generate.html",
-  "/": "pages/index.html",
-  "/qrCode": "pages/qrCode.html",
-  "/404": "pages/404.html"
+  "/codeBar": "pages/codeBar.js",
+  "/generate": "pages/generate.js",
+  "/": "pages/index.js",
+  "/qrCode": "pages/qrCode.js"
 }
