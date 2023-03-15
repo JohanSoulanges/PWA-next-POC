@@ -5,8 +5,8 @@
   "/add": "pages/add.html",
   "/api/hello": "pages/api/hello.js",
   "/codeBar": "pages/codeBar.html",
-  "/": "pages/index.html",
   "/generate": "pages/generate.html",
+  "/": "pages/index.html",
   "/qrCode": "pages/qrCode.html",
   "/404": "pages/404.html"
 }
