@@ -59,9 +59,6 @@ const GenerateComponent = (props) => {
             // }
           }}
         />
-        <button className='link' onClick='#'>
-          zoom
-        </button>
         <a href='/' className='link'>
           return Home
         </a>
